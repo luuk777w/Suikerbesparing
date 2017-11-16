@@ -1,0 +1,34 @@
+﻿<Window x:Class="SuikerBesparing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SuikerBesparing"
+        mc:Ignorable="d"
+        Title="Suiker Besparing" Height="350" Width="525">
+    <Grid>
+        <Label Content="Datum:" HorizontalAlignment="Left" Margin="10,182,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Date" Content="00/00/0000" HorizontalAlignment="Left" Margin="52,183,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="Input" HorizontalAlignment="Left" Height="23" Margin="10,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Submit" Content="Submit" HorizontalAlignment="Left" Margin="10,241,0,0" VerticalAlignment="Top" Width="120" Click="Submit_OnClick"/>
+        <Calendar x:Name="Calendar" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" SelectedDatesChanged="Calendar_OnSelectedDatesChanged" FirstDayOfWeek="Monday"/>
+
+        <Label x:Name="DagLabel" Content="Dag " HorizontalAlignment="Left" Margin="194,14,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="WeekLabel" Content="Week " HorizontalAlignment="Left" Margin="194,40,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="MaandLabel" Content="Maand " HorizontalAlignment="Left" Margin="194,66,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="JaarLabel" Content="Jaar " HorizontalAlignment="Left" Margin="194,92,0,0" VerticalAlignment="Top"/>
+        <Label Content="Totaal:" HorizontalAlignment="Left" Margin="194,118,0,0" VerticalAlignment="Top"/>
+        
+        <Label x:Name="DagValue" Content="" HorizontalAlignment="Left" Margin="300,14,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="WeekValue" Content="" HorizontalAlignment="Left" Margin="300,40,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="MaandValue" Content="" HorizontalAlignment="Left" Margin="300,66,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="JaarValue" Content="" HorizontalAlignment="Left" Margin="300,92,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="TotaalValue" Content="" HorizontalAlignment="Left" Margin="300,118,0,0" VerticalAlignment="Top"/>
+        <Label Content="ml water" HorizontalAlignment="Left" Margin="135,213,0,0" VerticalAlignment="Top"/>
+
+
+
+
+
+    </Grid>
+</Window>
